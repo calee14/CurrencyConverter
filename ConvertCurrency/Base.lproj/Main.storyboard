@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +13,123 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ConvertCurrency" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dcv-jp-ms9">
+                                <rect key="frame" x="0.0" y="148" width="375" height="114"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="CaT-4K-6Cl">
+                                        <rect key="frame" x="41" y="17" width="292" height="80"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="canada" translatesAutoresizingMaskIntoConstraints="NO" id="cjd-bh-0a8">
+                                                <rect key="frame" x="0.0" y="4" width="72" height="72"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CANADA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sqq-yV-eVV">
+                                                <rect key="frame" x="72" y="30" width="110" height="20"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="110" id="kTq-SY-AdY"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="0.0" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ahe-uc-wLn" customClass="BillAmountTextField" customModule="ConvertCurrency" customModuleProvider="target">
+                                                <rect key="frame" x="182" y="28" width="110" height="24"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="110" id="LzC-Te-TYy"/>
+                                                </constraints>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                            </textField>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="003-XR-tSd"/>
+                                            <constraint firstItem="sqq-yV-eVV" firstAttribute="top" secondItem="CaT-4K-6Cl" secondAttribute="top" constant="30" id="ZKy-25-Z7d"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="CaT-4K-6Cl" firstAttribute="centerY" secondItem="dcv-jp-ms9" secondAttribute="centerY" id="Npu-fM-Ppv"/>
+                                    <constraint firstItem="CaT-4K-6Cl" firstAttribute="centerX" secondItem="dcv-jp-ms9" secondAttribute="centerX" id="uLb-Ms-6hR"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jbm-j6-6CQ">
+                                <rect key="frame" x="0.0" y="20" width="375" height="128"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="GcX-ex-trK">
+                                        <rect key="frame" x="41" y="24" width="292" height="80"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="america" translatesAutoresizingMaskIntoConstraints="NO" id="MR6-1M-Vhg">
+                                                <rect key="frame" x="0.0" y="4" width="72" height="72"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="US" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sXj-tO-3JW">
+                                                <rect key="frame" x="72" y="30" width="110" height="20"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="110" id="jye-KQ-5VA"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="0.0" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bif-IM-fZg" customClass="BillAmountTextField" customModule="ConvertCurrency" customModuleProvider="target">
+                                                <rect key="frame" x="182" y="28" width="110" height="24"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="110" id="ciq-ah-IWJ"/>
+                                                </constraints>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                            </textField>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="sXj-tO-3JW" firstAttribute="top" secondItem="GcX-ex-trK" secondAttribute="top" constant="30" id="jXF-KF-c10"/>
+                                            <constraint firstAttribute="height" constant="80" id="zwX-db-NKa"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="GcX-ex-trK" firstAttribute="centerY" secondItem="jbm-j6-6CQ" secondAttribute="centerY" id="nsn-bN-uoz"/>
+                                    <constraint firstItem="GcX-ex-trK" firstAttribute="centerX" secondItem="jbm-j6-6CQ" secondAttribute="centerX" id="udW-i2-QdB"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="jbm-j6-6CQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="7ci-rp-oNi"/>
+                            <constraint firstAttribute="bottom" secondItem="jbm-j6-6CQ" secondAttribute="bottom" constant="519" id="DTq-Xp-Ihq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="dcv-jp-ms9" secondAttribute="bottom" constant="405" id="Rnn-V0-Z01"/>
+                            <constraint firstItem="dcv-jp-ms9" firstAttribute="top" secondItem="jbm-j6-6CQ" secondAttribute="bottom" id="SZ7-yJ-oQV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jbm-j6-6CQ" secondAttribute="trailing" id="Vo2-hq-fii"/>
+                            <constraint firstItem="dcv-jp-ms9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Wlf-NS-H1I"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dcv-jp-ms9" secondAttribute="trailing" id="dLJ-9a-Dlq"/>
+                            <constraint firstItem="jbm-j6-6CQ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="qJU-Hm-5Yb"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="canadaContainer" destination="dcv-jp-ms9" id="5Ww-7D-xdc"/>
+                        <outlet property="firstCurrencyAmount" destination="bif-IM-fZg" id="rYT-AY-tGm"/>
+                        <outlet property="firstCurrencyCard" destination="GcX-ex-trK" id="uCN-HI-iC0"/>
+                        <outlet property="firstCurrencyImage" destination="MR6-1M-Vhg" id="VQX-Ox-Yxk"/>
+                        <outlet property="firstCurrencyTitle" destination="sXj-tO-3JW" id="PBs-3u-rnh"/>
+                        <outlet property="secondCurrencyAmount" destination="Ahe-uc-wLn" id="fKS-Hy-L6K"/>
+                        <outlet property="secondCurrencyCard" destination="CaT-4K-6Cl" id="sSS-f6-PbR"/>
+                        <outlet property="secondCurrencyImage" destination="cjd-bh-0a8" id="GwS-jk-C2x"/>
+                        <outlet property="secondCurrencyTitle" destination="sqq-yV-eVV" id="ApK-ZF-xDw"/>
+                        <outlet property="usContainer" destination="jbm-j6-6CQ" id="NQi-Qk-xe6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="america" width="72" height="72"/>
+        <image name="canada" width="72" height="72"/>
+    </resources>
 </document>

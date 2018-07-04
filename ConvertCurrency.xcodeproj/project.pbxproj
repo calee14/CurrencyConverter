@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B332AB2C20ED4C0000702DC4 /* BillAmountTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B332AB2B20ED4C0000702DC4 /* BillAmountTextField.swift */; };
 		B367C82820ED232D000CBBF1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B367C82720ED232D000CBBF1 /* AppDelegate.swift */; };
 		B367C82A20ED232D000CBBF1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B367C82920ED232D000CBBF1 /* ViewController.swift */; };
 		B367C82D20ED232D000CBBF1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B367C82B20ED232D000CBBF1 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B332AB2B20ED4C0000702DC4 /* BillAmountTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BillAmountTextField.swift; path = "../../TipCalculator/TipCalculatorStarter/Supporting Files/BillAmountTextField.swift"; sourceTree = "<group>"; };
 		B367C82420ED232D000CBBF1 /* ConvertCurrency.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ConvertCurrency.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B367C82720ED232D000CBBF1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B367C82920ED232D000CBBF1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,6 +58,7 @@
 			children = (
 				B367C82720ED232D000CBBF1 /* AppDelegate.swift */,
 				B367C82920ED232D000CBBF1 /* ViewController.swift */,
+				B332AB2B20ED4C0000702DC4 /* BillAmountTextField.swift */,
 				B367C82B20ED232D000CBBF1 /* Main.storyboard */,
 				B367C82E20ED232E000CBBF1 /* Assets.xcassets */,
 				B367C83020ED232E000CBBF1 /* LaunchScreen.storyboard */,
@@ -136,6 +139,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B367C82A20ED232D000CBBF1 /* ViewController.swift in Sources */,
+				B332AB2C20ED4C0000702DC4 /* BillAmountTextField.swift in Sources */,
 				B367C82820ED232D000CBBF1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
